@@ -1,0 +1,68 @@
+
+
+<html>
+    <head>
+        <title>Wordle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+
+        <link rel="stylesheet" href="wordle.css">
+        <script src="wordle.js"></script>
+    </head>
+
+    <body>
+        <header>
+        <section id = "header">
+         
+        <nav>
+        <div class = "lis">
+            
+            <h1 class="header2">Wordle</h1>
+
+            <button class="bt"onClick="toggleDarkMode()">&#9681;</button>
+
+            
+            <button class="bt" onclick="fun2()">&#63;</button>
+            <button class="bt" onclick="fun3()"> &#9432;</button>
+        <div>
+    </nav>
+    </section>
+        </header>
+    <main> 
+        <div id = "imag">
+        <img src="example.png">
+        <button class = "strt" onclick = "Restart()">StartOver</button>
+        
+    </div>
+
+        <div id="col1"> 
+            <hr>
+            <br>
+            <div id="board">
+            </div>
+            <div id="hint-box">
+                
+            <div id = "hint"></div>
+            </div>
+            <button onclick = "Restart()" class = "strt" >StartOver</button>
+            <br>
+            <h1 id="answer"></h1>
+            <footer id = "foo"> @ Mohamad.Hammoud. All rights reserved. | Copyright Protected</footer>
+        </div>
+
+        <div id="col2">
+            <h3>How To Play</h3>
+            <ul id = "list">
+                <li>Start typing. THe letters will appear in the boxes.</li>
+                <li>Remove letters with a Backspace</li>
+                <li>Hit Enter/Return to submit an answer</li>
+                <li>Letters with green backgrounds are in the correct place spot</li>
+                <li>Letters with yellow backgrounds exist in the word, but are wrongly placed.</li>
+                <li>Letters with gray backgrounds do not exist in the word</li>
+                <li>If you need a hint, click the &#63; button.</li>
+            </ul>
+        </div>
+    </main>
+    </body>
+    
+</html>
